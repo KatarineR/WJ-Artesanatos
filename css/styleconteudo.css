@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Belleza, sans-serif;
+    font-weight: lighter;
+}
+
+body {
+    background-color: #e7c69e;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+header {
+    background-color: #804324;
+    color: #e7c69e;
+    padding: 10px 20px;
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+header .logo {
+    width: 150px; 
+    height: auto; 
+}
+
+header .titulo-logo {
+    margin-left: 20px; 
+}
+
+nav {
+    padding: 20px; 
+    text-align: center;
+    border-bottom: solid #804324 5px;
+    height: 100px;
+}
+
+nav button {
+    margin: 0 10px; 
+    padding: 10px 20px;
+    border: none;
+    background-color: #804324;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    color: #e7c69e;
+    font-size: 20px;
+}
+
+nav button:hover {
+    background-color: #e7c69e;
+    color: #804324;
+    border:solid #804324 1px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    color: #e7c69e;
+}
+
+[class*="col-"] {
+	justify-content: center;
+    text-align: center;
+    background-color: #804324;
+    border-radius: 15px;
+}
+
+.grid-img {
+    width: 100%; 
+    height: auto;
+    display: block;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+p {
+    padding: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+article {
+    margin: 30px;
+}
+
+article > h1 {
+    text-align: center;
+    color: #804324;
+}
+
+#sobre-mim {
+    text-align: center;
+    color: #804324;
+    font-size: 28px;
+}
+
+footer {
+    background-color: #804324;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.logo {
+    height: 100%;
+    width: auto;
+}
+
+@media screen and (max-width: 767px) {
+   
+    .grid-container {
+        grid-template-columns: auto;
+    }
+   
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav button {
+        width: 100%;
+        margin: 10px 0;
+    
+}
+}

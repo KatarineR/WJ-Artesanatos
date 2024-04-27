@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-weight: lighter;
+    font-family: Belleza, sans-serif;
+}
+
+body {
+    font-family: Belleza, sans-serif;
+    margin: 0;
+    background-color: #804324;
+}
+
+.headerlogo {
+    background-color: #804324;
+    color: #e7c69e;
+    padding: 10px 20px;
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.headerlogo .logo {
+    width: 150px; 
+    height: auto; 
+}
+
+.headerlogo .titulo-logo {
+    margin-left: 20px; 
+    color: #e7c69e;;
+}
+
+header {
+    background-color: #804324;
+    color: #e7c69e;
+    padding: 10px 20px;
+    height: 150px;
+}
+
+nav {
+    padding: 10px; 
+    text-align: center;
+    border-bottom: solid #804324 5px;
+    height: 100px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: #e7c69e;;
+}
+
+nav button {
+    margin: 0 10px; 
+    padding: 10px 20px;
+    border: none;
+    background-color: #804324;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    color: #e7c69e;
+    font-size: 20px;
+}
+
+nav button:hover {
+    background-color: #e7c69e;
+    color: #804324;
+    border:solid #804324 1px;
+}
+
+h1 {
+    color: #804324;
+    font-family: Belleza;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.lista {
+    display: block;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 15px;
+    text-align: justify;
+    border: solid #e7c69e 1px;
+    padding: 8px;
+    font-size: 18px;
+    justify-content: flex-end;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #e7c69e;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    color: #e7c69e;
+}
+
+.perguntas {
+    background-color: #804324;
+    color: #e7c69e;
+    border-bottom: solid #e7c69e 1px;
+}
+
+.contatos {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    background-color: #e7c69e;
+    color: #804324;
+    font-weight: lighter;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    color: #804324;
+    margin: 15px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    .row {
+        grid-template-columns: 100%;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav button {
+        width: 100%;
+        margin: 10px 0;
+    
+}
+}
